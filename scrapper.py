@@ -6,11 +6,11 @@ from selenium.webdriver.chrome.options import Options
 import json
 import time
 
-# options= Options()
-# options.add_argument("--headless")
+options= Options()
+options.add_argument("--headless")
 
 chrome_path = (r"C:\Users\90533\Desktop\chromedriver_win32\chromedriver.exe")
-driver = webdriver.Chrome(chrome_path)
+driver = webdriver.Chrome(chrome_path, options=options)
 # geth the page url you want to scrapp 
 driver.get ('https://www.alibaba.com/products/plain_tshirts_for_printing.html') 
 time.sleep(1)
